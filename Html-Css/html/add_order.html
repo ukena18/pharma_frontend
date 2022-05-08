@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy App</title>
+  
+    <link rel="stylesheet" href="../css/main.css">
+
+
+</head>
+<body>
+      <header>
+        <h1 class="app-title">Pharmacy APP</h1>
+    </header>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="search.html">Search Person</a></li>
+            <li><a href="add_order.html">Add Person</a></li>
+            <li><a href="login_page.html">Logout</a></li> 
+        </ul>
+    </nav>
+    <main>
+      <form class="add-order-form">
+            <div class="add-order-container">
+            <label for="name">Name:</label>
+            <input  class="input-text" type="text" id="name" name="name" value="Azra">
+            
+            <label for="name">Last:</label>
+            <input  class="input-text" type="text" id="last" name="last" value="Zelal">
+            
+            <label for="description">Descr:</label>
+            <input  class="input-text" type="text" id="description" name="description" placeholder="description" required>
+          
+            <label for="price">Price:</label>
+            <input  class="input-text" type="text" id="price" name="price" placeholder="price" required>
+
+            <label for="price">Who paid:</label>
+            <input  class="input-text" type="text" id="whoPaid" list="whoPaid_list" name="whoPaid" placeholder="Who Paid">
+            <datalist id="whoPaid_list">
+              <option value="Ramazan">
+              <option value="Azra">
+            </datalist>
+        
+            <label for="datePaid">Date paid: </label>
+            <input  class="input-text" type="date" id="datePaid" name="datePaid">
+
+            <label for="paymentMethod">Method: </label>
+            <input  class="input-text" type="text" list="paymentMethod_list" id="paymentMethod" name="paymentMethod">
+            <datalist id="paymentMethod_list">
+              <option value="CASH">
+              <option value="CARD">
+            </datalist>
+
+            <button class="add-button search-button">ADD</button>
+          </div>
+      </form>
+  </main>
+
+
+
+
+<script src="../js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy App</title>
+    <!-- <link rel="stylesheet" href="../css/index.css"> -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/search.css">
+
+
+
+</head>
+<body>
+    <header>
+        <h1 class="app-title">Pharmacy APP</h1>
+   </header>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="search.html">Search Person</a></li>
+            <li><a href="add_order.html">Add Person</a></li>
+            <li><a href="login_page.html">Logout</a></li> 
+        </ul>
+    </nav>
+    <main>
+        <form class="search-form edit-form">
+            <div class="order-container">
+                <button class="search-button" style="width:100%;" >Add Order</button>
+                <h6>123123</h6>
+                 
+            </div>
+            <div class="edit-container">
+                
+                <input class="input-text" type="text" id="name" name="name" value="Azra">
+                <input class="input-text" type="text" id="name" name="name" placeholder="Type Parent ID">
+                <input class="input-text" type="text" id="name" name="name" value="Zelal">
+                <input class="search-button" type="submit" value="Search">
+            </div>
+        </form>
+        <section class="people-list">
+            <h5 class="section-title">Most REcent Transactions</h5>
+            <div class="most-recent-nav">
+                <h6>Id</h6>
+                <h6>Name</h6>
+                <h6>Description</h6>
+                
+                <h6>Price</h6>
+                <h6>Method</h6>
+             
+            </div>
+            <hr>
+            <div class="single-person most-recent-nav">
+                <h6><span>124312</span></h6>
+                <h6 class="name-tag">Ruken turgut </h6>  
+                    <h6 >Oral Hygn</h6> 
+                    <h6 >32 $</h6> 
+                    <button id="pay-cash-1" name="pay-cash-1" class="search-button">pCash</button>
+                    <button id="pay-cash-1" name="pay-cash-1" class="search-button">pCard</button>
+                    
+            </div>
+            <div class="single-person most-recent-nav">
+                <h6><span>124312</span></h6>
+                <h6 class="name-tag">Ruken turgut </h6>  
+                    <h6 >Oral Hygn</h6> 
+                    <h6 >32 $</h6> 
+                    <button id="pay-cash-1" name="pay-cash-1" class="search-button">pCash</button>
+                    <button id="pay-cash-1" name="pay-cash-1" class="search-button">pCard</button>
+                    
+            </div>
+            <div class="single-person most-recent-nav">
+                <h6><span>124312</span></h6>
+                <h6 class="name-tag">Ruken turgut </h6>  
+                    <h6 >Oral Hygn</h6> 
+                    <h6 >32 $</h6> 
+                    <button id="pay-cash-1" name="pay-cash-1" class="search-button">pCash</button>
+                    <button id="pay-cash-1" name="pay-cash-1" class="search-button">pCard</button>
+                    
+            </div>
+        </section>
+        <section class="people-list">
+            <h5 class="section-title">All Dependents</h5>
+            <div class="all-dependents-nav ">
+                <h6>Id</h6>
+                <h6>Name</h6>
+                <h6>Price</h6>
+                <h6>Method</h6>
+            </div>
+            <hr>
+            <div class="single-person all-dependents-nav">
+                <h6><span>124312</span></h6>
+                <h6 class="name-tag">Ruken turgut </h6>    
+                    <h6 >32 $</h6> 
+                    <button id="pay-cash-1" name="pay-cash-1" class="search-button">pCash</button>
+                    <button id="pay-cash-1" name="pay-cash-1" class="search-button">pCard</button> 
+            </div> 
+            <div class="single-person all-dependents-nav">
+                <h6><span>124312</span></h6>
+                <h6 class="name-tag">Ruken turgut </h6>    
+                    <h6 >32 $</h6> 
+                    <button id="pay-cash-1" name="pay-cash-1" class="search-button">pCash</button>
+                    <button id="pay-cash-1" name="pay-cash-1" class="search-button">pCard</button> 
+            </div>  
+            <div class="single-person all-dependents-nav">
+                <h6><span>124312</span></h6>
+                <h6 class="name-tag">Ruken turgut </h6>    
+                    <h6 >32 $</h6> 
+                    <button id="pay-cash-1" name="pay-cash-1" class="search-button">pCash</button>
+                    <button id="pay-cash-1" name="pay-cash-1" class="search-button">pCard</button> 
+            </div>   
+        </div>
+        </section>
+       
+        <section class="total-amount">
+            <h2>total amount:</h2>
+            <h2 id="show-total-amount">124.54 $</h2>
+        </section>
+
+           
+
+        <section class="people-list">
+            <h5 class="section-title">Transactions History</h5>
+            <div class="transactions-history-nav">
+                <h6>Id</h6>
+                <h6>Name</h6>
+                <h6>Description</h6>
+                <h6>Date paid</h6>
+                <h6>Who paid</h6>
+                <h6>Cost</h6>
+             
+            </div>
+            <div class="single-person transactions-history-nav">
+                <h6><span>124312</span></h6>
+                <h6 class="name-tag">Ruken turgut </h6>  
+                    <h6 >Oral Hygn</h6> 
+                    <h6>12/2/2021 12:43</h6>
+                    <h6>Ramazan turgut</h6>
+                    <h6 >32 $</h6> 
+                    
+            </div>
+            <div class="single-person transactions-history-nav">
+                <h6><span>124312</span></h6>
+                <h6 class="name-tag">Ruken turgut </h6>  
+                    <h6 >Oral Hygn</h6> 
+                    <h6>12/2/2021 12:43</h6>
+                    <h6>Ramazan turgut</h6>
+                    <h6 >32 $</h6> 
+                    
+            </div>
+            <div class="single-person transactions-history-nav">
+                <h6><span>124312</span></h6>
+                <h6 class="name-tag">Ruken turgut </h6>  
+                    <h6 >Oral Hygn</h6> 
+                    <h6>12/2/2021 12:43</h6>
+                    <h6>Ramazan turgut</h6>
+                    <h6 >32 $</h6> 
+                    
+            </div>
+            <div class="single-person transactions-history-nav">
+                <h6><span>124312</span></h6>
+                <h6 class="name-tag">Ruken turgut </h6>  
+                    <h6 >Oral Hygn</h6> 
+                    <h6>12/2/2021 12:43</h6>
+                    <h6>Ramazan turgut</h6>
+                    <h6 >32 $</h6> 
+                    
+            </div>
+        </section>
+</main>
+    
+   
+    
+
+
+<script src="../js/index.js"></script>
+</body>
+</html>
+
