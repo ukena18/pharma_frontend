@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { Routes, Route, useParams, useNavigate } from "react-router-dom";
 import AuthContext from "../context/AuthContext";
 
-function Order_add() {
+function OrderAdd() {
   let navigate = useNavigate();
   const [name, setName] = useState("Person name");
   const [last, setLast] = useState("person last");
@@ -149,4 +149,4 @@ function Order_add() {
   );
 }
 
-export default Order_add;
+export default OrderAdd;

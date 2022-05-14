@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-function Person_add() {
+function PersonAdd() {
   let navigate = useNavigate();
   const AddUser = async (e) => {
     e.preventDefault();
@@ -74,4 +74,4 @@ function Person_add() {
   );
 }
 
-export default Person_add;
+export default PersonAdd;
