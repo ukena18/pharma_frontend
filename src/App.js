@@ -8,7 +8,6 @@ import Navbar from "./components/navbar";
 
 import { AuthProvider } from "./context/AuthContext";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Hello from "./controllers/hello";
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
       <AuthProvider>
         <Navbar />
         <Routes>
-          <Route path="/hello" element={<Hello />} />
           <Route path="/" element={<Homepage />} />
           <Route path="/add_order/:pk" element={<OrderAdd />} />
           <Route path="/add_person" element={<PersonAdd />} />

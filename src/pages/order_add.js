@@ -1,6 +1,5 @@
-import React, { useState, useEffect, useContext } from "react";
-import { Routes, Route, useParams, useNavigate } from "react-router-dom";
-import AuthContext from "../context/AuthContext";
+import React, { useState, useEffect } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 
 function OrderAdd() {
   let navigate = useNavigate();
@@ -8,7 +7,7 @@ function OrderAdd() {
   const [last, setLast] = useState("person last");
   const [customer, setCustomer] = useState(null);
   const [parent, setParent] = useState(null);
-  let { logoutUser } = useContext(AuthContext);
+
   let { pk } = useParams();
   let authTokens = localStorage.getItem("authTokens");
   authTokens = JSON.parse(authTokens);
@@ -62,7 +61,7 @@ function OrderAdd() {
 
   useEffect(() => {
     getUser();
-  }, []);
+  });
   return (
     <div>
       <form className="add-order-form" onSubmit={order_add_api}>
